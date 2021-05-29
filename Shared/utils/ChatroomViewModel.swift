@@ -25,7 +25,6 @@ class ChatroomViewModel: ObservableObject{
     
     func fetchData(){
         if (user != nil){
-            print(user!.uid)
             db.collection("chatrooms").whereField("users", arrayContains: user!.uid).addSnapshotListener({(snapshot, error) in
                 //get respective documents
                 guard let documents = snapshot?.documents else{
@@ -46,6 +45,37 @@ class ChatroomViewModel: ObservableObject{
         }
     }
     
+    // handler is a functin we can call after the data is stored in the database. hence, it is escaping
+    func createChatroom(title:String, handler: @escaping () -> Void){
+        if(user != nil){
+            db.collection("chatrooms").addDocument(data: [
+                "joinCode": Int.random(in: 1000000..<5000000),
+                "title": title,
+                "users": [user!.uid]
+            ]){err in
+                if let err = err {
+                    print("error in file [ChatroomViewModel.swift], function [createChatroom], \(err)")
+                }else{
+                    handler()
+                }
+            }
+        }
+    }
+    
+    func joinChatroom(joinCode: String, handler: @escaping () -> Void){
+        if (user != nil){
+            db.collection("chatrooms").whereField("joinCode", isEqualTo: Int(joinCode) ?? -1).getDocuments(){(snapshot, err) in
+                if let err = err {
+                    print("error: \(err)")
+                }else{
+                    for document in snapshot!.documents{
+                        self.db.collection("chatrooms").document(document.documentID).updateData(["users": FieldValue.arrayUnion([self.user!.uid])])
+                        handler()
+                    }
+                }
+            }
+        }
+    }
     
     
     

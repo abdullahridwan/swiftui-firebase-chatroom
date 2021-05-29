@@ -33,6 +33,6 @@ struct ChatList: View {
 
 struct ChatList_Previews: PreviewProvider {
     static var previews: some View {
-        ChatList()
+        ChatList().environmentObject(ChatroomViewModel())
     }
 }
