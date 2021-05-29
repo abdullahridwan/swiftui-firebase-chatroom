@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		941BD74C567EC644F4C41CB4 /* Pods_swifftui_firebase_chat__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169227335A3ADF7829D0B6E1 /* Pods_swifftui_firebase_chat__macOS_.framework */; };
+		B0A80F75BA2A6BB08FA7864F /* Pods_swifftui_firebase_chat__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED78C1CB7FBD07654D1D443F /* Pods_swifftui_firebase_chat__iOS_.framework */; };
 		B5C2D82426615A2300200C9A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D82326615A2300200C9A /* Tests_iOS.swift */; };
 		B5C2D82F26615A2300200C9A /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D82E26615A2300200C9A /* Tests_macOS.swift */; };
 		B5C2D83126615A2300200C9A /* swifftui_firebase_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D80826615A2000200C9A /* swifftui_firebase_chatApp.swift */; };
 		B5C2D83226615A2300200C9A /* swifftui_firebase_chatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D80826615A2000200C9A /* swifftui_firebase_chatApp.swift */; };
 		B5C2D83326615A2300200C9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D80926615A2000200C9A /* ContentView.swift */; };
-		B5C2D83426615A2300200C9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D80926615A2000200C9A /* ContentView.swift */; };
 		B5C2D83526615A2300200C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C2D80A26615A2300200C9A /* Assets.xcassets */; };
 		B5C2D83626615A2300200C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C2D80A26615A2300200C9A /* Assets.xcassets */; };
+		B5C2D84626615A9F00200C9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5C2D84526615A9F00200C9A /* GoogleService-Info.plist */; };
+		B5C2D84726615A9F00200C9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5C2D84526615A9F00200C9A /* GoogleService-Info.plist */; };
+		B5C2D84B2661ABC200200C9A /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D84A2661ABC200200C9A /* SessionStore.swift */; };
+		B5C2D84E2661B81100200C9A /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D84D2661B81100200C9A /* ChatList.swift */; };
+		B5C2D8502661B81E00200C9A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D84F2661B81E00200C9A /* Login.swift */; };
+		B5C2D8522661DFCD00200C9A /* ChatroomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C2D8512661DFCD00200C9A /* ChatroomViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		169227335A3ADF7829D0B6E1 /* Pods_swifftui_firebase_chat__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swifftui_firebase_chat__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C95FEF17D4ECB3F84D69A07 /* Pods-swifftui-firebase-chat (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swifftui-firebase-chat (macOS).release.xcconfig"; path = "Target Support Files/Pods-swifftui-firebase-chat (macOS)/Pods-swifftui-firebase-chat (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		1CDA98F30D7F07924591232D /* Pods-swifftui-firebase-chat (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swifftui-firebase-chat (macOS).debug.xcconfig"; path = "Target Support Files/Pods-swifftui-firebase-chat (macOS)/Pods-swifftui-firebase-chat (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		82FCEA9F802EB2419C866F3B /* Pods-swifftui-firebase-chat (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swifftui-firebase-chat (iOS).debug.xcconfig"; path = "Target Support Files/Pods-swifftui-firebase-chat (iOS)/Pods-swifftui-firebase-chat (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		ABFD8FE37F6850396EE3644F /* Pods-swifftui-firebase-chat (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swifftui-firebase-chat (iOS).release.xcconfig"; path = "Target Support Files/Pods-swifftui-firebase-chat (iOS)/Pods-swifftui-firebase-chat (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		B5C2D80826615A2000200C9A /* swifftui_firebase_chatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swifftui_firebase_chatApp.swift; sourceTree = "<group>"; };
 		B5C2D80926615A2000200C9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5C2D80A26615A2300200C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +61,12 @@
 		B5C2D82A26615A2300200C9A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C2D82E26615A2300200C9A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B5C2D83026615A2300200C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5C2D84526615A9F00200C9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5C2D84A2661ABC200200C9A /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		B5C2D84D2661B81100200C9A /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
+		B5C2D84F2661B81E00200C9A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B5C2D8512661DFCD00200C9A /* ChatroomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomViewModel.swift; sourceTree = "<group>"; };
+		ED78C1CB7FBD07654D1D443F /* Pods_swifftui_firebase_chat__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swifftui_firebase_chat__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A80F75BA2A6BB08FA7864F /* Pods_swifftui_firebase_chat__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941BD74C567EC644F4C41CB4 /* Pods_swifftui_firebase_chat__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,14 +112,18 @@
 				B5C2D82226615A2300200C9A /* Tests iOS */,
 				B5C2D82D26615A2300200C9A /* Tests macOS */,
 				B5C2D81026615A2300200C9A /* Products */,
+				C79F0A1FE2AF05A2CC5ED001 /* Pods */,
+				BE7BDEABF8F007C1455EFA43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B5C2D80726615A2000200C9A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B5C2D84C2661B7F900200C9A /* Views */,
+				B5C2D8482661AB9D00200C9A /* utils */,
+				B5C2D84526615A9F00200C9A /* GoogleService-Info.plist */,
 				B5C2D80826615A2000200C9A /* swifftui_firebase_chatApp.swift */,
-				B5C2D80926615A2000200C9A /* ContentView.swift */,
 				B5C2D80A26615A2300200C9A /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -151,6 +175,45 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		B5C2D8482661AB9D00200C9A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2D84A2661ABC200200C9A /* SessionStore.swift */,
+				B5C2D8512661DFCD00200C9A /* ChatroomViewModel.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		B5C2D84C2661B7F900200C9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2D84D2661B81100200C9A /* ChatList.swift */,
+				B5C2D84F2661B81E00200C9A /* Login.swift */,
+				B5C2D80926615A2000200C9A /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE7BDEABF8F007C1455EFA43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED78C1CB7FBD07654D1D443F /* Pods_swifftui_firebase_chat__iOS_.framework */,
+				169227335A3ADF7829D0B6E1 /* Pods_swifftui_firebase_chat__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C79F0A1FE2AF05A2CC5ED001 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82FCEA9F802EB2419C866F3B /* Pods-swifftui-firebase-chat (iOS).debug.xcconfig */,
+				ABFD8FE37F6850396EE3644F /* Pods-swifftui-firebase-chat (iOS).release.xcconfig */,
+				1CDA98F30D7F07924591232D /* Pods-swifftui-firebase-chat (macOS).debug.xcconfig */,
+				1C95FEF17D4ECB3F84D69A07 /* Pods-swifftui-firebase-chat (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5C2D83926615A2300200C9A /* Build configuration list for PBXNativeTarget "swifftui-firebase-chat (iOS)" */;
 			buildPhases = (
+				53981B28AA1E92116AFBA729 /* [CP] Check Pods Manifest.lock */,
 				B5C2D80B26615A2300200C9A /* Sources */,
 				B5C2D80C26615A2300200C9A /* Frameworks */,
 				B5C2D80D26615A2300200C9A /* Resources */,
+				CE97B5EFF4FF00C2BC4DF593 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5C2D83C26615A2300200C9A /* Build configuration list for PBXNativeTarget "swifftui-firebase-chat (macOS)" */;
 			buildPhases = (
+				070095CE49DE4E11F68DA697 /* [CP] Check Pods Manifest.lock */,
 				B5C2D81326615A2300200C9A /* Sources */,
 				B5C2D81426615A2300200C9A /* Frameworks */,
 				B5C2D81526615A2300200C9A /* Resources */,
@@ -276,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C2D83526615A2300200C9A /* Assets.xcassets in Resources */,
+				B5C2D84626615A9F00200C9A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C2D83626615A2300200C9A /* Assets.xcassets in Resources */,
+				B5C2D84726615A9F00200C9A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,13 +371,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		070095CE49DE4E11F68DA697 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swifftui-firebase-chat (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53981B28AA1E92116AFBA729 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swifftui-firebase-chat (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE97B5EFF4FF00C2BC4DF593 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swifftui-firebase-chat (iOS)/Pods-swifftui-firebase-chat (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swifftui-firebase-chat (iOS)/Pods-swifftui-firebase-chat (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swifftui-firebase-chat (iOS)/Pods-swifftui-firebase-chat (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5C2D80B26615A2300200C9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5C2D83326615A2300200C9A /* ContentView.swift in Sources */,
+				B5C2D8502661B81E00200C9A /* Login.swift in Sources */,
+				B5C2D84E2661B81100200C9A /* ChatList.swift in Sources */,
+				B5C2D8522661DFCD00200C9A /* ChatroomViewModel.swift in Sources */,
 				B5C2D83126615A2300200C9A /* swifftui_firebase_chatApp.swift in Sources */,
+				B5C2D84B2661ABC200200C9A /* SessionStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +453,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C2D83426615A2300200C9A /* ContentView.swift in Sources */,
 				B5C2D83226615A2300200C9A /* swifftui_firebase_chatApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,6 +602,7 @@
 		};
 		B5C2D83A26615A2300200C9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82FCEA9F802EB2419C866F3B /* Pods-swifftui-firebase-chat (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +624,7 @@
 		};
 		B5C2D83B26615A2300200C9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFD8FE37F6850396EE3644F /* Pods-swifftui-firebase-chat (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,10 +647,12 @@
 		};
 		B5C2D83D26615A2300200C9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CDA98F30D7F07924591232D /* Pods-swifftui-firebase-chat (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -532,10 +671,12 @@
 		};
 		B5C2D83E26615A2300200C9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C95FEF17D4ECB3F84D69A07 /* Pods-swifftui-firebase-chat (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
